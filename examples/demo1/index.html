@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="400" height="400">
+        <!-- demo1 -->
+        <circle cx="50" cy="50" r="30" style="fill:#ff6600">
+            <animate attributeName="r" attributeType="XML" from="30" values="30;50;30" begin="0s" dur="2s" fill="freeze" repeatCount='indefinite'></animate>
+            <animate attributeName="fill-opacity" attributeType="CSS" from="1" values="1;0.6;1" begin="0s" dur="2s" repeatCount="indefinite"></animate>
+        </circle>
+        <!-- demo2 -->
+        <circle cx="50" cy="120" r='0' style="fill:#ff6600">
+            <animate id='a1' attributeName="r" attributeType="XML" from="0" to="30" fill="freeze" begin='0' dur='0.2s'></animate>
+        </circle>
+        <circle cx="100" cy="120" r="0" style="fill:#ff6600">
+            <animate id="a2" attributeName="r" attributeType="XML" from="0" to="30" fill="freeze" begin="a1.end" dur="0.2s"></animate>
+        </circle>
+        <circle cx="150" cy="120" r="0" style="fill:#ff6600">
+            <animate attributeName="r" attributeType="CSS" from="0" to="30" begin="a2.end" dur="0.2" fill="freeze"></animate>
+        </circle>
+    </svg>
+    <svg width="140" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a xlink:href="https://developer.mozilla.org/en-US/docs/SVG" target="_blank">
+            <rect height="30" width="120" y="0" x="0" rx="15" />
+            <text fill="white" text-anchor="middle" y="21" x="60">SVG on MDN</text>
+        </a>
+    </svg>
+</body>
+
+</html>
