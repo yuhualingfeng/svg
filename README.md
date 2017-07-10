@@ -33,6 +33,19 @@ animate元素定义一个图形的动画,它有以下属性:
 + attributeType:产生动画的属性类型,有两个可选值:`XML`,`CSS`
 + from:产生动画的属性的初始值
 + to:产生动画的属性的最终值
++ dur: 动画持续时间
+
+###animateMotion
+沿着某一路径运动
+##SVG中的CSS属性
+
++ fill
++ fill-opacity
++ stroke
++ stroke-width
++ stroke-opacity
+
+
 
 ##参考手册
 https://developer.mozilla.org/zh-CN/docs/Web/SVG
